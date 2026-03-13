@@ -1,0 +1,36 @@
+{
+  "template_id": "qr-green-light-deals-v1",
+  "name": "Quality Roots — Green Light Deals",
+  "created_at": "2026-03-13T00:00:00.000Z",
+  "version": "1.0.0",
+  "theme": {
+    "style": "bold-athletic-neon",
+    "description": "Dramatic spotlight deal reveals with hard-cut transitions, neon lime price slams, and cinematic product showcases inspired by Quality Roots' athletic brand identity",
+    "colors": ["#0d1f0e", "#7dce2a", "#a8f040", "#f0ede0", "#e63946"],
+    "mood": "bold, energetic, premium, urgent, sports-broadcast",
+    "tags": ["cannabis", "dispensary", "deals", "sale", "green", "bold", "athletic"]
+  },
+  "capabilities": {
+    "products_per_cycle": 1,
+    "cycles_through_all_products": true
+  },
+  "animation": {
+    "duration": 9.8,
+    "fps": 30,
+    "entrance_duration": 2.8,
+    "idle_duration": 5.4,
+    "exit_duration": 1.6,
+    "uses_plugins": ["CustomEase", "SplitText", "DrawSVGPlugin"]
+  },
+  "assets": {
+    "background": "assets/background.svg",
+    "overlays": [],
+    "icons": [],
+    "fonts": ["Bebas Neue", "Barlow Condensed"]
+  },
+  "technical": {
+    "resolution": "1920x1080",
+    "performance": "optimized",
+    "browser_compatibility": "chrome_latest"
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Roots — Deals</title>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js?v=r4k9z2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js?v=r4k9z2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js?v=r4k9z2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/DrawSVGPlugin.min.js?v=r4k9z2"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=r4k9z2">
+</head>
+<body>
+  <div id="scene">
+
+    <!-- ─── BACKGROUND ─────────────────────────────── -->
+    <div id="background">
+      <div id="bg-image"></div>
+      <!-- Watermark ticker rows (filled by JS) -->
+      <div id="bg-watermark"></div>
+      <!-- Diagonal lime light slice -->
+      <div id="bg-light-slice"></div>
+      <!-- Vignette overlay -->
+      <div id="bg-vignette"></div>
+    </div>
+
+    <!-- ─── ACCENT BARS ─────────────────────────────── -->
+    <div id="accent-bar-top"></div>
+    <div id="accent-bar-bottom"></div>
+
+    <!-- ─── TRANSITION FLASH ───────────────────────── -->
+    <div id="flash-overlay"></div>
+
+    <!-- ─── SCAN LINE (idle ambient) ──────────────── -->
+    <div id="scan-line"></div>
+
+    <!-- ─── PRODUCTS (dynamically rendered) ────────── -->
+    <div id="products-container"></div>
+
+    <!-- ─── FOREGROUND / UI LAYER ─────────────────── -->
+    <div id="foreground-layer">
+
+      <!-- Quality Roots Logo -->
+      <div id="qr-logo">
+        <svg id="logo-svg" viewBox="0 0 300 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Hexagon badge -->
+          <polygon
+            id="logo-hex"
+            points="22,3 40,3 49,19.5 40,36 22,36 13,19.5"
+            fill="none" stroke="#7dce2a" stroke-width="2.5"/>
+          <!-- Leaf / tree inside hex -->
+          <path
+            id="logo-leaf"
+            d="M31,8 C31,8 24,12.5 23.5,19.5 C23,26.5 27.5,30 31,30 C34.5,30 39,26.5 38.5,19.5 C38,12.5 31,8 31,8 Z"
+            fill="#7dce2a" opacity="0.9"/>
+          <line x1="31" y1="24" x2="31" y2="30" stroke="#0a1708" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="20" x2="34" y2="20" stroke="#0a1708" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- QUALITY -->
+          <text id="logo-quality" x="60" y="20"
+            font-family="'Bebas Neue', sans-serif"
+            font-size="18" fill="#7dce2a" letter-spacing="6">QUALITY</text>
+          <!-- ROOTS -->
+          <text id="logo-roots" x="60" y="36"
+            font-family="'Bebas Neue', sans-serif"
+            font-size="18" fill="#f0ede0" letter-spacing="6">ROOTS</text>
+        </svg>
+      </div>
+
+      <!-- Deals corner badge (top right) -->
+      <div id="deals-corner">
+        <div id="deals-corner-inner">
+          <span id="deals-corner-text">DEALS</span>
+        </div>
+      </div>
+
+      <!-- Divider line (vertical center) -->
+      <div id="center-divider"></div>
+
+    </div>
+
+    <!-- ─── BOTTOM TICKER ──────────────────────────── -->
+    <div id="bottom-ticker">
+      <div id="ticker-track"></div>
+    </div>
+
+  </div>
+
+  <script src="animation.js?v=r4k9z2"></script>
+</body>
+</html>
